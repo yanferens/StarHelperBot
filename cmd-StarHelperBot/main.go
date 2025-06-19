@@ -7,6 +7,7 @@ import (
 
 	"github.com/mymmrac/telego"
 	th "github.com/mymmrac/telego/telegohandler"
+	"github.com/yanferens/StarHelperBot/internal/handlers"
 )
 
 func main() {
@@ -25,6 +26,7 @@ func main() {
 
 	// Create bot handler and specify from where to get updates
 	bh, _ := th.NewBotHandler(bot, updates)
+	handlers.InitMenuHandlers(bh, bot)
 
 	// Stop handling updates
 	defer func() { _ = bh.Stop() }()
