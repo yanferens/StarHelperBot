@@ -6,10 +6,10 @@ func MenuService() (map[string]string, map[string]string) {
 	}
 
 	buttons := map[string]string{
-		"Магазин":    "shop",
-		"Чат": "link_to_chat",
-		"Правила чату":   "link_to_chat_rules",
-		"Команди": "view_commands",
+		"Магазин":      "shop",
+		"Чат":          "https://t.me/StarMafiaUA",
+		"Правила чату": "https://telegra.ph/STAR-MAFIA-07-29",
+		"Команди":      "view_commands",
 	}
 
 	return text, buttons

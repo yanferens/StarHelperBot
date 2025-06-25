@@ -12,7 +12,6 @@ import (
 
 func main() {
 	ctx := context.Background()
-	
 
 	// Note: Please keep in mind that default logger may expose sensitive information, use in development only
 	bot, err := telego.NewBot(TOKEN, telego.WithDefaultDebugLogger())
@@ -20,7 +19,7 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	
+
 	// Get updates channel
 	updates, _ := bot.UpdatesViaLongPolling(ctx, nil)
 
