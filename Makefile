@@ -1,5 +1,5 @@
 APP_NAME=StarHelperBot
-MAIN_DIR=cmd-StarHelperBot
+MAIN_DIR=cmd/StarHelperBot
 
 .PHONY: all build tidy run fmt clean
 
