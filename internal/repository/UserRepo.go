@@ -15,7 +15,7 @@ type User struct {
 	stars     int64
 	comets    int64
 }
-func add_user(user_id string, nickname string, username string, date string, status string, stars int64, comets int64) error {
+func AddUser(user_id string, nickname string, username string, date string, status string, stars int64, comets int64) error {
 	db, err := sqlx.Connect("postgres", "user=youruser dbname=yourdb sslmode=disable")
 	if err != nil {
 		log.Fatal(err)
